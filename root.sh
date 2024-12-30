@@ -11,7 +11,7 @@ if [ "$ARCH" = "x86_64" ]; then
 elif [ "$ARCH" = "aarch64" ]; then
   ARCH_ALT=arm64
 else
-  printf "CPU Tidak Support Bro: ${ARCH}"
+  printf "CPU Ga Support Bro: ${ARCH}"
   exit 1
 fi
 
@@ -70,7 +70,7 @@ RESET_COLOR='\e[0m'
 display_gg() {
   echo -e "${WHITE}___________________________________________________${RESET_COLOR}"
   echo -e ""
-  echo -e "           ${CYAN}-----> OK GASS BRO ! <----${RESET_COLOR}"
+  echo -e "           ${CYAN}-----> Sudah Root NIh ! <----${RESET_COLOR}"
 }
 
 clear
