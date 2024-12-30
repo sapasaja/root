@@ -11,21 +11,18 @@ if [ "$ARCH" = "x86_64" ]; then
 elif [ "$ARCH" = "aarch64" ]; then
   ARCH_ALT=arm64
 else
-  printf "Unsupported CPU architecture: ${ARCH}"
+  printf "CPU Tidak Support Bro: ${ARCH}"
   exit 1
 fi
 
 if [ ! -e $ROOTFS_DIR/.installed ]; then
   echo "#######################################################################################"
   echo "#"
-  echo "#                                      Foxytoux INSTALLER"
-  echo "#"
-  echo "#                           Copyright (C) 2024, RecodeStudios.Cloud"
-  echo "#"
+  echo "#                                      U-ROOT"
   echo "#"
   echo "#######################################################################################"
 
-  read -p "Do you want to install Ubuntu? (YES/no): " install_ubuntu
+  read -p "Piye meh install Ubuntu? (YES/no): " install_ubuntu
 fi
 
 case $install_ubuntu in
@@ -73,7 +70,7 @@ RESET_COLOR='\e[0m'
 display_gg() {
   echo -e "${WHITE}___________________________________________________${RESET_COLOR}"
   echo -e ""
-  echo -e "           ${CYAN}-----> Mission Completed ! <----${RESET_COLOR}"
+  echo -e "           ${CYAN}-----> OK GASS BRO ! <----${RESET_COLOR}"
 }
 
 clear
